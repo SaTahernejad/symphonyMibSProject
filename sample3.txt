@@ -1,0 +1,13 @@
+N 3
+M 4
+LC 1
+LC 3
+LC 5
+LR 0
+LR 1
+LR 3
+LR 4
+LO -184
+LO -585
+LO -423
+OS 1
