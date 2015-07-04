@@ -38,7 +38,7 @@
 
 int user_receive_lp_data(void **user)
 {
-    return(USER_DEFAULT);
+   return(USER_DEFAULT);
 }
 
 /*===========================================================================*/
@@ -149,7 +149,7 @@ int user_is_feasible(void *user, double lpetol, int varnum, int *indices,
  /* Load the problem to SYMPHONY */
 	sym_explicit_load_problem(env2, prob->n, prob->m2, prob->column_starts, prob->matrix_indices,
 		    prob->matrix_values, prob->lb, prob->ub, prob->is_int, prob->obj, 0, prob->sense,
-		    rhs1,prob->rngval, true);
+				  rhs1,prob->rngval, true);
 	FREE(rhs1);
         //sym_solve(env2);
 	sym_set_int_param(env2,"prep_level",-2);

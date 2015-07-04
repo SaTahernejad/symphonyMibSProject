@@ -68,10 +68,13 @@ typedef struct USER_PROBLEM{
     double           *matrix_upvalues;
     int              len_ul;
     int              *IsInt;
-   
-
+    char             type;
+    double           *intCosts;
+    double           InterBudget;
    //sa:end
 
 }user_problem;
+//int user_read_data PROTO((user_problem *prob, char *infile));
+int user_read_data PROTO((sym_environment *env,user_problem *prob, char *infile, char *infile2));
 
 #endif

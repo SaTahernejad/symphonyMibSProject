@@ -365,8 +365,6 @@ int user_io(void *user)
 		    prob->upcolumn_starts[i2]=i1;
 		    i1++;
 		    i2++;
-		    //add
-		    prob->len_ul++;
 		}
 	    }
 	    k = k+RowLengths[i];
