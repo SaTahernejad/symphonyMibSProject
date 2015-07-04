@@ -108,16 +108,6 @@ int main(int argc, char **argv)
 int user_read_data(sym_environment *env, user_problem *prob, char *infile, char *infile2)
 //int user_read_data(user_problem *prob, char *infile)
 {
-    //CoinMpsIO mps;
-
-    //mps.messageHandler()->setLogLevel(0);
-   
-    //mps.setInfinity(mps.getInfinity()); // TODO: What exactly is this doing here?
-
-    //if (mps.readMps(infile,"")){
-    //	printf("\nMpp I/O: No problem data file specified\n\n");
-//	exit(1); 
-    // }
     FILE *f = NULL;
     CoinMpsIO *mps = new CoinMpsIO;
     if (mps->readMps(infile,"")){
