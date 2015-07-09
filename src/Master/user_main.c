@@ -72,7 +72,9 @@ int main(int argc, char **argv)
 {
     /* Create the data structure for storing the problem instance.*/
     user_problem *prob = (user_problem *)calloc(1, sizeof(user_problem));
-    prob->type='I';
+    cout<<"Please, enter the type of problem: 'G': General,'I': Interdiction"<<endl;
+    cin>>prob->type;
+    //prob->type='I';
     int termcode;
     sym_environment *env = sym_open_environment();
 
